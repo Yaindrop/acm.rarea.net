@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="content-type" content="text/htm">
+        <link href="logo_black.png" rel="Shortcut Icon">
+        <link href="main.css" rel="stylesheet" type="text/css">
+        <title>rarea.acm.kmp_lec</title>
+        <style type="text/css">
+            @import url('https://themes.googleusercontent.com/fonts/css?kit=fpjTOVmNbO4Lz34iLyptLUXza5VhXqVC6o75Eld_V98');
+            ol {
+                margin: 0;
+                padding: 0
+            }
+    
+            table td,
+            table th {
+                padding: 0
+            }
+    
+            .c3 {
+                color: #000000;
+                font-weight: 400;
+                text-decoration: none;
+                vertical-align: baseline;
+                font-size: 14pt;
+                font-family: "Calibri";
+                font-style: italic
+            }
+    
+            .c1 {
+                color: #000000;
+                font-weight: 400;
+                text-decoration: none;
+                vertical-align: baseline;
+                font-size: 14pt;
+                font-family: "Calibri";
+                font-style: normal
+            }
+    
+            .c4 {
+                color: #000000;
+                font-weight: 400;
+                text-decoration: none;
+                vertical-align: baseline;
+                font-size: 16pt;
+                font-family: "Calibri";
+                font-style: normal
+            }
+    
+            .c0 {
+                padding-top: 0pt;
+                padding-bottom: 8pt;
+                line-height: 1.0791666666666666;
+                orphans: 2;
+                widows: 2;
+                text-align: left
+            }
+    
+            .c11 {
+                color: #000000;
+                font-weight: 400;
+                text-decoration: none;
+                vertical-align: baseline;
+                font-family: "Calibri";
+                font-style: normal
+            }
+    
+            .c12 {
+                padding-top: 0pt;
+                padding-bottom: 8pt;
+                line-height: 1.0791666666666666;
+                orphans: 2;
+                widows: 2;
+                text-align: center
+            }
+    
+            .c8 {
+                text-decoration-skip-ink: none;
+                -webkit-text-decoration-skip: none;
+                color: #1155cc;
+                text-decoration: underline
+            }
+
+            .c9 {
+                margin-left: -76.5pt;
+                text-indent: 76.5pt
+            }
+    
+            .c6 {
+                color: inherit;
+                text-decoration: inherit
+            }
+    
+            .c10 {
+                font-size: 14pt
+            }
+    
+            .c5 {
+                font-size: 10pt
+            }
+    
+            .c2 {
+                text-indent: 36pt
+            }
+    
+            .title {
+                padding-top: 24pt;
+                color: #000000;
+                font-weight: 700;
+                font-size: 36pt;
+                padding-bottom: 6pt;
+                font-family: "Calibri";
+                line-height: 1.0791666666666666;
+                page-break-after: avoid;
+                orphans: 2;
+                widows: 2;
+                text-align: left
+            }
+    
+            .subtitle {
+                padding-top: 18pt;
+                color: #666666;
+                font-size: 24pt;
+                padding-bottom: 4pt;
+                font-family: "Georgia";
+                line-height: 1.0791666666666666;
+                page-break-after: avoid;
+                font-style: italic;
+                orphans: 2;
+                widows: 2;
+                text-align: left
+            }
+    
+            li {
+                color: #000000;
+                font-size: 11pt;
+                font-family: "Calibri"
+            }
+    
+            p {
+                margin: 0;
+                color: #000000;
+                font-size: 11pt;
+                font-family: "Calibri"
+            }
+    
+            h1 {
+                padding-top: 24pt;
+                color: #000000;
+                font-weight: 700;
+                font-size: 24pt;
+                padding-bottom: 6pt;
+                font-family: "Calibri";
+                line-height: 1.0791666666666666;
+                page-break-after: avoid;
+                orphans: 2;
+                widows: 2;
+                text-align: left
+            }
+    
+            h2 {
+                padding-top: 18pt;
+                color: #000000;
+                font-weight: 700;
+                font-size: 18pt;
+                padding-bottom: 4pt;
+                font-family: "Calibri";
+                line-height: 1.0791666666666666;
+                page-break-after: avoid;
+                orphans: 2;
+                widows: 2;
+                text-align: left
+            }
+    
+            h3 {
+                padding-top: 14pt;
+                color: #000000;
+                font-weight: 700;
+                font-size: 14pt;
+                padding-bottom: 4pt;
+                font-family: "Calibri";
+                line-height: 1.0791666666666666;
+                page-break-after: avoid;
+                orphans: 2;
+                widows: 2;
+                text-align: left
+            }
+    
+            h4 {
+                padding-top: 12pt;
+                color: #000000;
+                font-weight: 700;
+                font-size: 12pt;
+                padding-bottom: 2pt;
+                font-family: "Calibri";
+                line-height: 1.0791666666666666;
+                page-break-after: avoid;
+                orphans: 2;
+                widows: 2;
+                text-align: left
+            }
+    
+            h5 {
+                padding-top: 11pt;
+                color: #000000;
+                font-weight: 700;
+                font-size: 11pt;
+                padding-bottom: 2pt;
+                font-family: "Calibri";
+                line-height: 1.0791666666666666;
+                page-break-after: avoid;
+                orphans: 2;
+                widows: 2;
+                text-align: left
+            }
+    
+            h6 {
+                padding-top: 10pt;
+                color: #000000;
+                font-weight: 700;
+                font-size: 10pt;
+                padding-bottom: 2pt;
+                font-family: "Calibri";
+                line-height: 1.0791666666666666;
+                page-break-after: avoid;
+                orphans: 2;
+                widows: 2;
+                text-align: left
+            }
+        </style>
+    </head>
+    <body>
+        <div class="item" id="head">
+            <a href="https://www.rarea.net/">rarea</a>.<a href="index.html">acm</a>.<a href="kmp_lec.html">kmp_lec</a>
+        </div>
+        <div class="item">
+            <p class="c12">
+                <span class="c4">Lecture for KMP Algorithm</span>
+            </p>
+            <p class="c0">
+                <span class="c5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adapted from </span>
+                <span class="c5 c8">
+                    <a class="c6" href="https://www.zhihu.com/question/21923021/answer/37475572">https://www.zhihu.com/question/21923021/answer/37475572</a>
+                </span>
+                <span class="c5 c11">&nbsp;by &#36877;&#36965;&#34892;</span>
+            </p>
+            <p class="c0 c2">
+                <span class="c1">The problem that this algorithm wants to solve is to find the position of a word&rsquo;s presence in some text, that
+                    is, to search some text for a certain word.</span>
+            </p>
+            <p class="c0 c2">
+                <span class="c1">When we want to solve this kind of problem, the easiest algorithm that comes to our mind is usually that we first
+                    iterate through the text, and for every index of the text, we iterate through the word to see whether they match
+                    at that index.</span>
+            </p>
+            <p class="c0 c2">
+                <span class="c1">For a m-length text and n-length word, such algorithm will do m*n iterations in the worst case and thus has O(n^2)
+                    time complexity, which is obviously not very efficient. </span>
+            </p>
+            <p class="c0 c2">
+                <span class="c1">Using KMP algorithm, we can solve this problem within linear time, that is, O(n) time complexity. Now let me explain
+                    how this algorithm works.</span>
+            </p>
+            <p class="c0 c2">
+                <span class="c1">Assume that we want to search in the text &ldquo;abbaabbaaba&rdquo;</span>
+            </p>
+            <p class="c0" id="h.gjdgxs">
+                <span class="c1">with the word &ldquo;abbaaba&rdquo;.</span>
+            </p>
+            <p class="c0 c2">
+                <span class="c1">We can see that the two strings match with each other from index 0 to index 5 but stop matching at index 6.</span>
+            </p>
+            <p class="c0 c2">
+                <span class="c1">If we were using the brute force approach, we would start again from index 1 to compare the whole word. </span>
+            </p>
+            <p class="c0 c2">
+                <span class="c1">However, as we are human beings, we can see that the word we are searching starts with the pattern &ldquo;ab&rdquo;,
+                    and the next occurrence of this pattern after the index 0 in the text is the index 4, so naturally, we will start
+                    comparing the word at index 4, instead of index 1.</span>
+            </p>
+            <p class="c0 c2">
+                <span class="c1">This method is clearly more efficient than the brute force approach, and is the basic idea of KMP algorithm, but
+                    how can we implement it with codes? It turns out that we need to do some preprocessing on the word we want to
+                    search.</span>
+            </p>
+            <p class="c0">
+                <span class="c1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Now let&rsquo;s define some concepts to make the following explanation
+                    easier.</span>
+            </p>
+            <p class="c0">
+                <span class="c10">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                <span class="c3">Define: A prefix of a string is a substring that starts from its index 0 and ends at any index before the last index.</span>
+            </p>
+            <p class="c0 c2">
+                <span class="c3">Define: A suffix of a string is a substring that starts from any index after its index 0 and ends at the last index.</span>
+            </p>
+            <p class="c0">
+                <span class="c1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;For string &ldquo;abab&rdquo;, its prefixes are &ldquo;a&rdquo;,
+                    &ldquo;ab&rdquo;, &ldquo;aba&rdquo;, and its suffixes are &ldquo;b&rdquo;, &ldquo;ab&rdquo;, &ldquo;bab&rdquo;.</span>
+            </p>
+            <p class="c0 c2">
+                <span class="c3">Define: A &ldquo;partial match length&rdquo; of a string S is the largest length of some substring P, such that P
+                    is both a prefix and a suffix of S.</span>
+            </p>
+            <p class="c0 c2">
+                <span class="c1">For example, the partial match length of &ldquo;abab&rdquo; is 2, and the partial match length of &ldquo;ababa&rdquo;
+                    is 3.</span>
+            </p>
+            <p class="c0 c2">
+                <span class="c3">Define: A &ldquo;partial match table&rdquo;(PMT) of a string S is an array A, such that A has the same length as
+                    S, and A[i] is the partial match length of the substring of S from 0 to i.</span>
+            </p>
+            <p class="c0 c2">
+                <span class="c1">For example, the PMT of &ldquo;abab&rdquo; is [0, 0, 1, 2], and the PMT of &ldquo;ababa&rdquo; is [0, 0, 1, 2, 3].</span>
+            </p>
+            <p class="c0 c2">
+                <span class="c1">Now with the help of PMT, we can try to implement the KMP algorithm:</span>
+            </p>
+            <p class="c0 c9">
+                <img alt="" src="res/kmp_lec_p1.png" style="width: 676.50px; height: 302.00px; margin-left: -0.00px; margin-top: -0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                        title="">
+            </p>
+            <p class="c0">
+                <span class="c1">Our function needs a text to search in, a word to search for, a PMT for the word, and it should return a list that
+                    contains all indexes in the text where the word occurs.</span>
+            </p>
+            <p class="c0">
+                <span class="c1">First, define a list to store the result and a variable wordIndex to track how much of the word have been matched,
+                    and we set it to 0.</span>
+            </p>
+            <p class="c0">
+                <span class="c1">Then, use a for-loop to iterate through the text. For ecah iteration, if the text and the word matches, increase
+                    the wordIndex by 1. If wordIndex equals to the length of the word, which means an occurrence has been found,
+                    add the first index of this occurrence to the result.</span>
+            </p>
+            <p class="c0">
+                <span class="c1">Here comes the crucial part. When a mismatch is found, we check the PMT for the partial match length of the index
+                    in the word just before the mismatch, set the wordIndex to be that length, and check again for any mismatch.</span>
+            </p>
+            <p class="c0">
+                <span class="c1">To understand this, consider this situation: the text is &ldquo;&hellip;abaaba&hellip;&rdquo;, the word is &ldquo;abaabc&rdquo;,
+                    the PMT is [0, 0, 1, 1, 2, 0]. When a mismatch is found at wordIndex = 5, we found the PMT[4] is 2, and then
+                    we can know that the first 2 characters are the same as the 2 characters before wordIndex = 5. Therefore, we
+                    can just continue the comparation form the third character, that is, index 2 of the word string.</span>
+            </p>
+            <p class="c0">
+                <span class="c1">Similarly, we apply the same approach when a result is found.</span>
+            </p>
+            <p class="c0">
+                <span class="c1">This is the KMP algorithm. Now we have one problem left: how do we get the PMT for the word we want to search? Actually,
+                    we can use basically the same approach</span>
+            </p>
+            <p class="c0">
+                <span class="c1">Define a variable pmLength to the last partial match length we found. Set it to 0, since a string with length 1 always
+                    has 0 partial match length.</span>
+            </p>
+            <p class="c0">
+                <span class="c1">Use a for-loop to iterate through the word from its second index. For each iteration, if the new character equals
+                    to the character at index pmLength, which is the character just after the suffix of the last partial match, increase
+                    the pmLength by 1.</span>
+            </p>
+            <p class="c0 c9">
+                <img alt="" src="res/kmp_lec_p2.png" style="width: 689.50px; height: 282.00px; margin-left: -0.00px; margin-top: -0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                        title="">
+            </p>
+            <p class="c0">
+                <span class="c1">When a mismatch is found, check the PMT for the partial match length of the index just before the mismatch, set pmLength
+                    to that length, and check again for any mismatch.</span>
+            </p>
+            <p class="c0">
+                <span class="c1">For example, when the word is &ldquo;aabaaa&rdquo;, the first five partial match lengths have been found: [0, 1,
+                    0, 1, 2, *]. When we encounter the mismatch at index 5, pmLength is 2, PMT[pmLength - 1] is 1, and we set pmLength
+                    to 1. This length 1, as the partial match length of the suffix string &ldquo;aa&rdquo; of &ldquo;aabaa&rdquo;,
+                    is the length of the second longest partial match of &ldquo;aabaa&rdquo;. Therefore, we continue to compare the
+                    new character with the last character of &ldquo;aa&rdquo;, and fortunately they matched. Then pmLength is increased
+                    by 1 and the final result we get is [0, 1, 0, 1, 2, 2].</span>
+            </p>
+            <p class="c0">
+                <span class="c1">To prove that both of the two functions are in linear lime, look at the variable wordIndex: it&rsquo;s increased
+                    at most once in every iteration, which is the length of the text. It&rsquo;s also being decreased by the while-loop,
+                    but it is always greater or equal to 0, so it can only be decreased for at most the times it is increased. Therefore,
+                    the total times of the execution of the while-loop inside is the same as the total times of the execution of
+                    the for-loop, which means it runs in linear lime. The same analysis works for the getPmt function.</span>
+            </p>
+        </div>
+        <div class="item" id="foot">
+            <a href="https://www.rarea.net/huaxu.html">Dream of Huaxu</a>
+        </div>
+    </body>
+</html>
